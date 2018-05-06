@@ -1,26 +1,21 @@
 <template>
   <div class="hello">
-    <div id="mydiv"
-         @mousedown="dragMouseDown"
-         @mouseup="dragMouseUp"
-         v-bind:style="{top: position.top + 'px' , left: position.left + 'px'}">
-      <div id="mydivheader">
-        Content
-        <div>
-          <input type="text">
-        </div>
-        <div>
-          <button>👀</button>
-        </div>
-      </div>
-    </div>
+
+    <box-component></box-component>
+    <box-component></box-component>
+    <box-component></box-component>
 
   </div>
 </template>
 
 <script>
+  // import MyComponent from './test-component.vue';
+  import BoxComponent from './box.vue';
+
 export default {
   name: 'HelloWorld',
+  components: { BoxComponent },
+  template: '<box-component>',
   data () {
     return {
       offsetX: 0,
