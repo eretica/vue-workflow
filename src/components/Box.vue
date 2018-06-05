@@ -3,9 +3,9 @@
     <div id="mydiv"
          @mousedown="dragMouseDown"
          @mouseup="dragMouseUp"
-         v-bind:style="{top: position.top + 'px' , left: position.left + 'px'}">
+         v-bind:style="{top: top + 'px' , left: left + 'px'}">
       <div id="mydivheader">
-        Content
+        {{ name }}
         <div>
           <input type="text">
         </div>
@@ -21,14 +21,17 @@
 
 export default {
   name: 'Box',
+  props: {
+    'name': {type: String},
+    'top': {type: Number},
+    'left': {type: Number}
+  },
   data () {
     return {
       offsetX: 0,
       offsetY: 0,
-      position: {
-        top: '500',
-        left: '0',
-      },
+      // top: '500',
+      // left: '0',
       dragg: false
     }
   },
@@ -37,8 +40,8 @@ export default {
   },
   methods: {
     dragMouseDown: function (e) {
-      this.offsetX = e.clientX - this.position.left;
-      this.offsetY = e.clientY - this.position.top;
+      this.offsetX = e.clientX - this.left;
+      this.offsetY = e.clientY - this.top;
       this.dragg = true;
     },
     dragMouseUp: function (e) {
@@ -48,8 +51,8 @@ export default {
       if (!this.dragg) {
         return;
       }
-      this.position.top = e.clientY - this.offsetY;
-      this.position.left = e.clientX - this.offsetX;
+      this.top = e.clientY - this.offsetY;
+      this.left = e.clientX - this.offsetX;
     },
   }
 }

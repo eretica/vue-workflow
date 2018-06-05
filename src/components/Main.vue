@@ -2,7 +2,11 @@
   <div class="hello">
     <button @click="add_component">Add Component</button>
 
-    <box-component v-for="n in count"></box-component>
+    <box-component v-for="n in count"
+                   :name="'Component No.' + n"
+                   :top="300 + 10.5 * n"
+                   :left="10 + 10.5 * n">
+    </box-component>
 
   </div>
 </template>
