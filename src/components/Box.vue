@@ -22,16 +22,17 @@
 export default {
   name: 'Box',
   props: {
-    'name': {type: String},
-    'top': {type: Number},
-    'left': {type: Number}
+    'ini_name': {type: String},
+    'ini_top': {type: Number},
+    'ini_left': {type: Number}
   },
   data () {
     return {
+      name: this.ini_name,
       offsetX: 0,
       offsetY: 0,
-      // top: '500',
-      // left: '0',
+      top: this.ini_top,
+      left: this.ini_left,
       dragg: false
     }
   },
