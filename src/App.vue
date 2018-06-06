@@ -4,7 +4,7 @@
       <h1>工事中</h1>
       <nav id="header-nav">
         <p><router-link to='/'>ホーム</router-link></p>
-        <p><a href="https://qiita.com/eretica">Qiita</a></p>
+        <p><a href="https://qiita.com/eretica" target="_blank">Qiita</a></p>
         <p><router-link to='/sample'>サンプルアプリ</router-link></p>
         <p><a href="https://github.com/eretica/Curriculum-Vitae" target="_blank">経歴書</a></p>
       </nav>
