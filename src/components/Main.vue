@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="main">
     <button @click="add_component">Add Component</button>
 
     <box-component v-for="n in count" :key="n"
@@ -15,7 +15,7 @@
   import BoxComponent from '@/components/Box.vue'
 
   export default {
-    name: 'HelloWorld',
+    name: 'Main',
     components: { BoxComponent },
     template: '<box-component>',
     data () {
