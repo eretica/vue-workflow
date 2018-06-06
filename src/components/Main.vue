@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <button @click="add_component">Add Component</button>
+    <button @click="add_component">クリックするとドラッグできる何かが追加されるよ！</button>
 
     <box-component v-for="n in count" :key="n"
                    :ini_name="'Component No.' + n"
