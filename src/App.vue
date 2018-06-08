@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header id="header">
-      <h1>工事中</h1>
+      <h1>‡工事中‡</h1>
       <nav id="header-nav">
         <p><router-link to='/'>ホーム</router-link></p>
         <p><a href="https://qiita.com/eretica" target="_blank">Qiita</a></p>
