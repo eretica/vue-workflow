@@ -12,7 +12,8 @@
 </template>
 
 <script>
-  import BoxComponent from '@/components/Box.vue'
+  // import BoxComponent from '@/components/Box.vue'
+  import BoxComponent from '@/components/Box_mac.vue'
 
   export default {
     name: 'Main',
@@ -30,5 +31,6 @@
 </script>
 
 <style scoped>
+
 
 </style>
