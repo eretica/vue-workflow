@@ -9,7 +9,11 @@
           <div class="titlebar">
             <div class="buttons">
               <div class="close">
+<<<<<<< HEAD
                 <a class="closebutton" href="#" @click="delete_emit"><span><strong>x</strong></span></a>
+=======
+                <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+>>>>>>> 2db22db076c403fd6db25c27e85c3cab92e97220
                 <!-- close button link -->
               </div>
               <div class="minimize">
